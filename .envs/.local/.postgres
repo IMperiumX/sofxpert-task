@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=ticket_system
+POSTGRES_USER=IQzaQoanbDUKtTtIwwzjioDASwhzgYUk
+POSTGRES_PASSWORD=De5ZeJOxHltoTwnrhcc8Iw87tGQExai0SZQ6k5rZbH1rDaADuVVQ9kevaD1nXgAU
