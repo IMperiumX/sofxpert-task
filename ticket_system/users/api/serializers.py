@@ -6,8 +6,5 @@ from ticket_system.users.models import User
 class UserSerializer(serializers.ModelSerializer[User]):
     class Meta:
         model = User
-        fields = ["username", "name", "url"]
-
-        extra_kwargs = {
-            "url": {"view_name": "api:user-detail", "lookup_field": "username"},
-        }
+        fields = ["id", "username", "name", "password", "is_staff"]
+        extra_kwargs = {"password": {"write_only": True}}
