@@ -88,6 +88,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "ticket_system.users",
     # Your stuff: custom apps go here
+    "ticket_system.core",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -344,7 +345,7 @@ SPECTACULAR_SETTINGS = {
     "TITLE": "ticket-system API",
     "DESCRIPTION": "Documentation of API endpoints of ticket-system",
     "VERSION": "1.0.0",
-    "SERVE_PERMISSIONS": ["rest_framework.permissions.IsAdminUser"],
+    "SERVE_PERMISSIONS": ["rest_framework.permissions.AllowAny"],
     "SCHEMA_PATH_PREFIX": "/api/",
 }
 # Your stuff...
